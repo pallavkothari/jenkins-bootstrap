@@ -13,7 +13,11 @@ docker run \
   jenkinsci/blueocean
 ```
 
+Accessing the jenkins container: `docker exec -it jenkins bash`
 Admin password: run `./inspect.sh` and in the interactive shell, `cat /var/jenkins_home/secrets/initialAdminPassword`
+
+After that setup recommended plugins, setup admin/admin, and proceed. 
+
 
 Resources
 - [book](https://jenkins.io/doc/book/getting-started/)
