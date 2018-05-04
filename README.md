@@ -10,6 +10,7 @@ docker run \
   -p 50000:50000 \ 
   -v jenkins-data:/var/jenkins_home \ 
   -v /var/run/docker.sock:/var/run/docker.sock \ 
+  -v "$HOME"/github:/home/github ## makes $HOME/github available to the container \
   jenkinsci/blueocean
 ```
 
